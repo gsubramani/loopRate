@@ -14,11 +14,11 @@ class LoopRate():
 		while(difference.microseconds/1000000.0 <1.0/self.rate):
 			difference = datetime.now() - self.startTime
 			pass
-		print 1/(difference.microseconds/1000000.0)
+		#print 1/(difference.microseconds/1000000.0)
 
 if __name__ == "__main__":
 	for i in range(10):
-		#print datetime.now()
+		print datetime.now()
 		with LoopRate(1000):
 			for i in range(1000):
 				pass
